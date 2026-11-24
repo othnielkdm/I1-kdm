@@ -1,9 +1,8 @@
 #include<stdio.h>
 
-Sale nwar
 typedef struct joueur {
     char nom[50];
-    char symbole;       // 'X' ou 'O'
+    char symbole;       
     int victoires;
 }tjoueur;
 
@@ -16,4 +15,3 @@ void initialiseGrille(char g[]){
 
 int demandeRejouer(){
     char mot[100];
-    //int rep;
