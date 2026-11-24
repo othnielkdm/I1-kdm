@@ -28,3 +28,12 @@ for (i = 0; 1 < 6; 1++) {
     }
     printf(|"\n");
 }
+
+int main() {
+    char grille[42];
+
+    initialiseGrille(grille);
+    afficheGrille(grille);
+
+    return 0;
+}
