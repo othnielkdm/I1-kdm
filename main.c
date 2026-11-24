@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/* Structure representant un joueur */
+Sale nwar
 typedef struct joueur {
     char nom[50];
     char symbole;       // 'X' ou 'O'
