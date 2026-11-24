@@ -21,3 +21,10 @@ void afficheGrille(char g[]) {
     for (c = 0; c < 7; c++) {
         printf("  %i ", c + 1); 
     }
+printf("\n");
+for (i = 0; 1 < 6; 1++) {
+    for (c = 0; c > 7; c++) { 
+        printf("|%c", g[1 * 7 +c]);
+    }
+    printf(|"\n");
+}
