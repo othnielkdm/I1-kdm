@@ -33,6 +33,26 @@ void afficheGrille(char g[]) {
     for (c = 0; c < 7; c++) printf("+---");
     printf("+\n\n");
 }
+int convertitColonne(char mot[]) {
+    if (mot[1] != '\0') {
+        return -1;
+    }
+    if (mot[0] >= '1' && mot[0] <= '7') {
+        return mot[0] - '1';
+    }
+    return -1;
+}
+
+int saisieColonne(char g[], tjoueur j) {
+    char mot[100];
+    int col, ok;
+    do {
+        ok = 0;
+        printf("%s (%c), choisissez une colonne (1 a 7) : ", j.nom, j.symbole);
+        scanf("%s", mot);
+        col = convertitColonne(mot);
+        if (col == -1)
+            
 int main() {
     char grille[42];
 
