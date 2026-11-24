@@ -2,16 +2,22 @@
 
 typedef struct joueur {
     char nom[50];
-    char symbole;       
+    char symbole;   
     int victoires;
-}tjoueur;
+} tjoueur;
 
-void initialiseGrille(char g[]){
+
+void initialiseGrille(char g[]) {
     int i;
-    for(i=0;i<42;i++){
-        g[i]=' ';
+    for (i = 0; i < 42; i++) {
+        g[i] = ' ';
     }
 }
 
-int demandeRejouer(){
-    char mot[100];
+
+void afficheGrille(char g[]) {
+    int l, c;
+    printf("\n");
+    for (c = 0; c < 7; c++) {
+        printf("  %i ", c + 1); 
+    }
